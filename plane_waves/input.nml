@@ -1,0 +1,8 @@
+&param_fisicos
+    f0 = 1.0e-4,         ! Parámetro de Coriolis (s^-1)
+    L_x = 500000.0,      ! Escala zonal (longitud de onda en x, metros)
+    L_y = 500000.0,      ! Escala meridional (longitud de onda en y, metros)
+    amp = 2.0,           ! Amplitud de la perturbación de la superficie (metros)
+    g = 9.81,            ! Aceleración de la gravedad (m/s^2)
+    H = 100.0            ! Profundidad del fluido (metros)
+/

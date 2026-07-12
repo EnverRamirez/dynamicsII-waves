@@ -21,14 +21,14 @@ inertia gravity modes.
 ### Inertia gravity waves
 The waves in this case have the dispersion relation given by
 $$
- \sigma = \pm \Big{ f^2 + C_o^2 K^2\Big}^{1/2}
+ \sigma = \pm \Big\{ f^2 + C_o^2 K^2\Big\}^{1/2}
 $$
 Lets $\theta=kx+ly-\sigma t + \phi_eta$, then the spatial structure that can be represented by
 $$
 \begin{subequations}
 \begin{align}
 \eta &= \eta_0 \cos(\theta)\\
-u &= \frac{1}{H_o} \Big[ \frac{k}{K} C\cos(\theta) - \frac{f}{\sigma}\frac{l}{K}C\sin(\theta)\Big] \eta_0
+u &= \frac{1}{H_o} \Big[ \frac{k}{K} C\cos(\theta) - \frac{f}{\sigma}\frac{l}{K}C\sin(\theta)\Big] \eta_0\\
 v &= \frac{1}{H_o} \Big[ \frac{l}{K} C\cos(\theta) - \frac{f}{\sigma}\frac{k}{K}C\sin(\theta)\Big] \eta_0
 \end{align}
 \end{subequations}

@@ -2,9 +2,10 @@
 ## Plane waves in a layer of constant depth
 Considering plane waves on a infinite plane for the shallow water case, in which
 the free surface perturbation is given by 
-
 $$
+\begin{equation}
  \eta = \text{Re}\[\eta_0 \text{e}^{i(kx+ly-\sigma t)}]
+\end{equation}
 $$
 The equation governing the evolution of $\eta$ is given by eq 3.6.9 in Pedlosky
 $$

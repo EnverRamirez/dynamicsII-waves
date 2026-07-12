@@ -23,7 +23,7 @@ The waves in this case have the dispersion relation given by
 $$
  \sigma = \pm \Big\{ f^2 + C_o^2 K^2\Big\}^{1/2}
 $$
-Lets $\theta=kx+ly-\sigma t + \phi_eta$, then the spatial structure that can be represented by
+Lets $\theta=kx+ly-\sigma t + \phi_\eta$, then the spatial structure that can be represented by
 $$
 \begin{align}
 \eta &= \eta_0 \cos(\theta)\\
@@ -50,12 +50,17 @@ $$
  u_{\perp} = \frac{\eta_0}{H_0} \frac{f}{\sigma}C \sin(\theta)
 $$
 ### Questions that arise
+Problem 1:
+Consider a Coriolis f=1.e-4 for a wave of 500 km in both x, y 
+components, an initial amplitude of 2.0 m and a shallow water of depth 100 m.
+
+-What is the velocity of the non-rotating shallow water gravity wave speed?
 -Compare the expressions given in eqs: 3.8.14 (Pedlosky)
 and the implemented in the code, shows that they are equivalent
  -what does it means that the programmed equations do not have
   time?
- -how to change the initial phase of eta? what changes must be
- implemented in the code to incorportate a $phi_eta$ (related
+ -how to change the initial phase of $\eta$? what changes must be
+ implemented in the code to incorportate a $\phi_\eta$ (related
  to the phase)change?
  - lox, loy, l1x, l1y => l1y = lox*l1x*loy/sqrt(d)
    where d = (loy*l1x)^2-(loy*lox)^2+(lox*l1x)^2
@@ -63,4 +68,9 @@ and the implemented in the code, shows that they are equivalent
 -how to change the phase of the initial $\eta$?
 -rotate the wave more parallel to they y axis, compute $C = sigma/K$,
  does |C| changes? justify your answer
+
+-Considering the Problem 1 wave, what changes do you expect in $\eta$,u and v by 
+ doubling the depth of the fluid?, justify your responses
 -what to make the velocity tip more circular and less elliptic?
+
+- 

@@ -37,7 +37,20 @@ unitary wavevector
 $$
   \hat{k} = \frac{1}{K} \vec{k} = \frac{1}{K} (k,l)
 $$
+Any unitary vector $\hat{s}$ perpendicular to the plane (k,l) will make the vector $\hat{k}$ to rotate if a vectorial multiplication is used
+$$
+  \hat{s}\times\hat{k} = \frac{1}{K}(-l,k) 
+$$
+Thus the solution for the plane waves can be written in terms of parallel and perpendicular fluid flow
 
+$$
+ u_{||} = \frac{\eta_0}{H_0} C \cos(\theta)
+$$
+$$
+ u_{\perp} = \frac{\eta_0}{H_0} \frac{f}{\sigma}C \sin(\theta)
+$$
 ### Questions that arise
-what makes the wave more circular and less elliptic
-how to set up the wave 
+-what makes the wave more circular and less elliptic?
+-how to set up the wave to be more parallel to the x axis?
+-how to change the phase of the initial $\eta$?
+

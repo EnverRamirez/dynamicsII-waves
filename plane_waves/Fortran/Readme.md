@@ -31,4 +31,13 @@ u &= \frac{1}{H_o} \Big[ \frac{k}{K} C\cos(\theta) - \frac{f}{\sigma}\frac{l}{K}
 v &= \frac{1}{H_o} \Big[ \frac{l}{K} C\cos(\theta) - \frac{f}{\sigma}\frac{k}{K}C\sin(\theta)\Big] \eta_0
 \end{align}
 $$
+Considering that the phase propagation is in the direction dictated by $\vec{k}=(k,l)$ whose components $k$ and $l$
+correspond to the along x and along y components of the wavenumber, the modulus $K=\sqrt{k^2 + l^2}$. Such that the
+unitary wavevector
+$$
+  \hat{k} = \frac{1}{K} \vec{k} = \frac{1}{K} (k,l)
+$$
 
+### Questions that arise
+what makes the wave more circular and less elliptic
+how to set up the wave 

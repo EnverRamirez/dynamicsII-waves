@@ -50,7 +50,17 @@ $$
  u_{\perp} = \frac{\eta_0}{H_0} \frac{f}{\sigma}C \sin(\theta)
 $$
 ### Questions that arise
--what makes the wave more circular and less elliptic?
+-Compare the expressions given in eqs: 3.8.14 (Pedlosky)
+and the implemented in the code, shows that they are equivalent
+ -what does it means that the programmed equations do not have
+  time?
+ -how to change the initial phase of eta? what changes must be
+ implemented in the code to incorportate a $phi_eta$ (related
+ to the phase)change?
+ - lox, loy, l1x, l1y => l1y = lox*l1x*loy/sqrt(d)
+   where d = (loy*l1x)^2-(loy*lox)^2+(lox*l1x)^2
 -how to set up the wave to be more parallel to the x axis?
 -how to change the phase of the initial $\eta$?
-
+-rotate the wave more parallel to they y axis, compute $C = sigma/K$,
+ does |C| changes? justify your answer
+-what to make the velocity tip more circular and less elliptic?

@@ -41,9 +41,9 @@ geopot = eta * g
 u = amp / H * (c**2 * k / omega * np.cos(l*Y) - L_y * f0 / (nn * np.pi) * np.sin(l*Y)) * np.cos(fase)
 v = -amp / H * L_y / (omega * nn * np.pi) * (f0**2 + (c * nn * np.pi / L_y)**2) * np.sin(l*Y) * np.sin(fase)
 
-div = -amp / H * (c**2 * k / omega * np.cos(l*Y) -
-                  L_y * f0 / (nn * np.pi) * np.sin(l*Y) +
-                  L_y / (omega * nn * np.pi) * (f0**2 + (c * nn * np.pi / L_y)**2)) * np.sin(fase)
+div = -amp / H * ( (c**2 * k / omega * np.cos(l*Y) -
+                  L_y * f0 / (nn * np.pi) * np.sin(l*Y) ) * k +
+                  L_y / (omega * nn * np.pi) * (f0**2 + (c * nn * np.pi / L_y)**2) * l * np.cos(l*Y)) * np.sin(fase)
 
 # ============================================================================
 # 4. FIGURA CON DOS PANELES

@@ -1,34 +1,49 @@
-# Shallow water equations: Fortran 
-## Topographic Rossby waves (small slope)
-The slight bottom slope $H_0$ is given by
-$$
- H_0 = D_0\big( 1 - \frac{sy}{L}\big)
-$$
-where $s \ll 1$.
+# Shallow Water Equations: Topographic Rossby Waves (Small Slope)
 
-To the lowest order in $s$ the slope does not alter the Kelvin wave.
+## Channel Geometry & Topography
 
-On the other hand, by neglecting the term $\mathcal{O}(s^2/L^2)$ as $s\ll 1$. It results
-$$
- \sigma^2 - \frac{fksC_0^2}{\sigma L} - C_0^2 \Big( k^2 + \frac{n^2 \pi^2}{L^2} + \frac{f^2}{C_0^2}\Big) = 0 
-$$
-### Poincaré Modes
-The high frequency limit, makes the term $\frac{f}{\sigma}$ goes to zero and
-the resulting dispersion corresponds to the Poincaré modes
+Consider a shallow water system with a weak linear bottom slope in the $y$-direction. The mean fluid depth $H_0(y)$ is given by:
 
-$$
- \sigma^2 = f^2 + C_0^2 \big( k^2 + \frac{n^2 \pi^2}{L^2} \big) + \mathcal{O}(s)
-$$
-this kind of high-frequency modes are not modified by the presence of the slight bottom slope
-The new important solution to the cubic system
+$$H_0(y) = D_0 \left( 1 - \frac{s y}{L} \right)$$
 
-### Rossby Modes
-For $\sigma = \mathcal{O}(s)$ lead to the dispersion relation for topographic Rossby
-waves
+where $s \ll 1$ is a small dimensionless slope parameter and $L$ is the characteristic channel width.
 
-$$
- \sigma = \frac{-ks}{k^2+n^2\pi^2/L^2 + f^2/C_0^2}\frac{f}{L}
-$$
+> **Note on Kelvin Waves:** To the lowest order in $s$ ($\mathcal{O}(1)$), the small slope does not alter the fundamental characteristics of the Kelvin wave.
+
+---
+
+## Dispersion Relation
+
+By linearized shallow water theory on a $\beta$-plane or $f$-plane, neglecting terms of order $\mathcal{O}(s^2/L^2)$ since $s \ll 1$, we obtain the fundamental cubic dispersion relation for gravity-topographic waves:
+
+$$\sigma^3 - C_0^2 \left( k^2 + \frac{n^2 \pi^2}{L^2} + \frac{f^2}{C_0^2} \right) \sigma - \frac{f k s C_0^2}{L} = 0$$
+
+where $C_0 = \sqrt{g D_0}$ is the shallow water wave speed, $f$ is the Coriolis parameter, $k$ is the zonal wavenumber, and $n$ is the meridional mode number.
+
+---
+
+## Limiting Solutions
+
+### 1. High-Frequency Limit: Poincaré Modes
+
+In the high-frequency limit ($\sigma \gg s f$), the topographic term becomes negligible. The dispersion relation simplifies to the classic Poincaré (inertia-gravity) wave modes:
+
+$$\sigma^2 = f^2 + C_0^2 \left( k^2 + \frac{n^2 \pi^2}{L^2} \right) + \mathcal{O}(s)$$
+
+These high-frequency modes are virtually unmodified by the slight bottom slope.
+
+### 2. Low-Frequency Limit: Topographic Rossby Modes
+
+For low frequencies ($\sigma = \mathcal{O}(s)$), the cubic term $\sigma^3$ can be neglected relative to the linear term. Rearranging for $\sigma$ yields the dispersion relation for **Topographic Rossby Waves**:
+
+$$\sigma = -\frac{f}{L} \frac{k s}{k^2 + \dfrac{n^2 \pi^2}{L^2} + \dfrac{f^2}{C_0^2}}$$
+
+Key properties of these waves:
+
+* **Phase Speed ($c = \sigma / k$):** Always negative ($c < 0$), meaning wave crests propagate westward (leaving shallower water to the right in the Northern Hemisphere).
+* **Restoring Mechanism:** Potential vorticity conservation over changing depth replaces the planetary $\beta$-effect ($\beta_{\text{eff}} = f s / L$).
+
+
 Considering plane waves on a infinite plane for the shallow water case, in which
 the free surface perturbation is given by 
 $$

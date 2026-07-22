@@ -36,7 +36,7 @@ These high-frequency modes are virtually unmodified by the slight bottom slope.
 
 For low frequencies ($\sigma = \mathcal{O}(s)$), the cubic term $\sigma^3$ can be neglected relative to the linear term. Rearranging for $\sigma$ yields the dispersion relation for **Topographic Rossby Waves**:
 
-$$\sigma = -\frac{f}{L} \frac{k s}{k^2 + \dfrac{n^2 \pi^2}{L^2} + \dfrac{f^2}{C_0^2}},  n=1,2,\cdots$$
+$$\sigma = -\frac{f}{L} \frac{k s}{k^2 + \dfrac{n^2 \pi^2}{L^2} + \dfrac{f^2}{C_0^2}},  \text{where  } n=1,2,\cdots$$
 
 Key properties of these waves:
 

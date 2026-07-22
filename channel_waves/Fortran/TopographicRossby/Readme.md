@@ -12,9 +12,23 @@ On the other hand, by neglecting the term $\mathcal{O}(s^2/L^2)$ as $s\ll 1$. It
 $$
  \sigma^2 - \frac{fksC_0^2}{\sigma L} - C_0^2 \Big( k^2 + \frac{n^2 \pi^2}{L^2} + \frac{f^2}{C_0^2}\Big) = 0 
 $$
+### Poincaré Modes
+The high frequency limit, makes the term $\frac{f}{\sigma}$ goes to zero and
+the resulting dispersion corresponds to the Poincaré modes
+
+$$
+ \sigma^2 = f^2 + C_0^2 \big( k^2 + \frac{n^2 \pi^2}{L^2} \big) + \mathcal{O}(s)
+$$
+this kind of high-frequency modes are not modified by the presence of the slight bottom slope
 The new important solution to the cubic system
 
+### Rossby Modes
+For $\sigma = \mathcal{O}(s)$ lead to the dispersion relation for topographic Rossby
+waves
 
+$$
+ \sigma = \frac{-ks}{k^2+n^2\pi^2/L^2 + f^2/C_0^2}\frac{f}{L}
+$$
 Considering plane waves on a infinite plane for the shallow water case, in which
 the free surface perturbation is given by 
 $$
